@@ -13,6 +13,7 @@ sudo pip install git+git://github.com/cjaiwenwen/aws.git#egg=aws-0.1-py2.7.egg
 
 ## How to use it
 
+```
 from awspackage import aws
 
 myaws = aws.AWS("AWS_ID",
@@ -22,10 +23,12 @@ myaws = aws.AWS("AWS_ID",
 
 myaws.main()
 
-AWS_ID refer to the AWS console ID \n
-AWS_KEY refer to the aws console secrect key \n
-ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com \n
-VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
+```
+
+* AWS_ID refer to the AWS console ID
+* AWS_KEY refer to the aws console secrect key
+* ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com
+* VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
 
 ## Authors
 
