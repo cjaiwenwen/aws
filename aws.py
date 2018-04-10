@@ -8,7 +8,7 @@ from os import system as system_call
 from threading import Thread
 import re
 from prettytable import PrettyTable
-from IPy import IP
+
 
 
 class AWS():
@@ -65,14 +65,6 @@ class AWS():
         dns = session.client('route53', region_name=region)
         elb = session.client('elb', region_name=region)
         return client, resource, dns, elb
-
-
-    def ip_validation(self, value):
-        try:
-            IP(value)
-            return True
-        except:
-            return False
 
 
     def create_a_record(self, hostname, value, region):
