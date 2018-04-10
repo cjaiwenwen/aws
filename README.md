@@ -9,9 +9,12 @@ This code is tested with python2.7.14, addtional modules (prettytable, boto3, pa
 
 ### Installing
 
-I am still working on Windows, sorry new to packaging :(
+* I have only tested the installation on Mac
 
-sudo pip install git+git://github.com/cjaiwenwen/aws.git#egg=aws-0.1-py2.7.egg
+* I am still working on Windows, sorry new to packaging :(
+
+* sudo pip install git+git://github.com/cjaiwenwen/aws.git#egg=aws-0.1-py2.7.egg
+
 
 ## How to use it
 
