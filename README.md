@@ -25,7 +25,8 @@ output=json
 * I am still working on Windows, sorry new to packaging :(
 
 * sudo pip install git+git://github.com/cjaiwenwen/aws.git#egg=aws-0.1-py2.7.egg
-
+or
+* sudo pip install aws_toolkit
 
 ## How to use it
 
