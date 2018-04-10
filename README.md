@@ -35,6 +35,17 @@ myaws.main()
 * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com
 * VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
 
+## What can the library could achieve
+
+* Create instance on any region if the VPC has been already created
+* Control the number of the VMs could provisioned
+* Choose the AMI image
+* Choose the subnets
+* Choose the security group
+* Modify the security group rules if need to be
+* Choose the size of the VM
+* Assign CNAME for the provisioned VM
+
 ## Authors
 
 * **Chen Jun** - *Initial work* - [CJAIWENWEN](https://github.com/cjaiwenwen)
