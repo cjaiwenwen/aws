@@ -1,1 +1,1 @@
-import aws
+from awspackage import aws
