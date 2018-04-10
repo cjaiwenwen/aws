@@ -6,6 +6,17 @@ This project this target to automate the AWS provisioning process for ec2 and ro
 
 This code is tested with python2.7.14, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
 
+* Need to configure following at home directory
+
+~/.aws/config
+
+```
+[default]
+region=ap-southeast-1
+output=json
+
+```
+
 
 ### Installing
 
