@@ -56,6 +56,9 @@ myaws.main()
 * Modify the security group rules if need to be
 * Choose the size of the VM
 * Assign CNAME for the provisioned VM
+* Continue ping the provisioned host
+* SSH to the host to confirm accessible (need to add ssh incoming rule)
+
 
 ## Authors
 
