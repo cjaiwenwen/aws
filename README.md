@@ -27,7 +27,7 @@ output=json
 
 ### Installing
 
-* I have tested working on Windows Mac and Linux
+* I have tested working on Mac and Linux
 
 * sudo pip install aws_toolkit
 
