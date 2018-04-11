@@ -13,7 +13,7 @@ Need to configure following at home directory
 ```
 ```
 [For Windows]
-"%UserProfile"/.aws/config
+"%UserProfile%"/.aws/config
 ```
 
 config file details
