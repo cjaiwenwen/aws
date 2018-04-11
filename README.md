@@ -47,7 +47,7 @@ myaws.main()
 
 * AWS_ID refer to the AWS console ID
 * AWS_KEY refer to the aws console secrect key
-* ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com
+* ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
 * VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
 
 ## What can the library could achieve
