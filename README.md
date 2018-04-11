@@ -15,6 +15,8 @@ This code is tested with python2.7.14, addtional modules (prettytable, boto3, pa
 [For Windows]
 "%UserProfile"/.aws/config
 ```
+
+config file details
 ```
 [default]
 region=ap-southeast-1
