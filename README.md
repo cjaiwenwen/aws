@@ -29,7 +29,7 @@ output=json
 
 * I have tested working on Mac and Linux
 
-* sudo pip install aws_toolkit==0.5
+* sudo pip install aws_toolkit==0.6
 
 ## How to use it
 
