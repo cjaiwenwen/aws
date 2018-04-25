@@ -4,32 +4,40 @@ This project this target to automate the AWS provisioning process for ec2 and ro
 
 ### Prerequisites
 
-This code is tested with python2.7.14, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
+This code is tested with python 2.7, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
 
-Need to configure following at home directory
+Need to configure following at home directory.
+
+#### For Linux and Mac.
 ```
-[For Linux and Mac]
 ~/.aws/config
-```
-```
-[For Windows]
-"%UserProfile%"/.aws/config
+~/.aws/credentials
 ```
 
-config file details
+#### For Windows.
+```
+"%UserProfile%"/.aws/config
+"%UserProfile%"/.aws/credentials
+```
+
+#### config file details
 ```
 [default]
 region=ap-southeast-1
 output=json
-
 ```
-
+### credentials file details
+'''
+[default]
+aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+'''
 
 ### Installing
 
 * I have tested working on Mac and Linux
 
-* sudo pip install aws_toolkit==0.9
+* sudo pip install aws_toolkit==1.0
 
 ## How to use it
 
