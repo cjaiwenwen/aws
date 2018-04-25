@@ -44,9 +44,7 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 from awspackage import aws
 
-myaws = aws.AWS("AWS_ID",
-        	"AWS_KEY",
-        	"ROUTE53_Domain",
+myaws = aws.AWS("ROUTE53_Domain",
         	"VM Access KEY full path")
 
 myaws.main()
