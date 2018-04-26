@@ -28,16 +28,20 @@ output=json
 ```
 #### credentials file details
 ```
-[default]
+[account1]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+[account2]
+aws_access_key_id=AKIAIOSFODNN7TEST
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYTESTKEY
 ```
 
 ### Installing
 
 * I have tested working on Mac and Linux
 
-* sudo pip install aws_toolkit==1.0
+* sudo pip install aws_toolkit==1.0.1
 
 ## How to use it
 
@@ -50,7 +54,7 @@ myaws = aws.AWS("ROUTE53_Domain",
 myaws.main()
 
 ```
-
+* Could select the account to provision based on the section by select the account1 and account2
 * AWS_ID refer to the AWS console ID
 * AWS_KEY refer to the aws console secrect key
 * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
