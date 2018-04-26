@@ -54,14 +54,13 @@ myaws = aws.AWS("ROUTE53_Domain",
 myaws.main()
 
 ```
-* Could select the account to provision based on the section by select the account1 and account2
-* AWS_ID refer to the AWS console ID
-* AWS_KEY refer to the aws console secrect key
+
 * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
 * VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
 
 ## What can the library could achieve
 
+* Could select the account to provision based on the section by select the account1 and account2
 * Create instance on any region if the VPC has been already created
 * Control the number of the VMs could provisioned
 * Choose the AMI image
