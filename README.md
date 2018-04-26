@@ -26,7 +26,7 @@ Need to configure following at home directory.
 region=ap-southeast-1
 output=json
 ```
-### credentials file details
+#### credentials file details
 ```
 [default]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
@@ -73,6 +73,10 @@ myaws.main()
 ## Authors
 
 * **Chen Jun** - *Initial work* - [CJAIWENWEN](https://github.com/cjaiwenwen)
+
+## Connect with me on Linkedin
+
+[Chen Jun](https://www.linkedin.com/in/cjaiwenwen/) 
 
 ## License
 
