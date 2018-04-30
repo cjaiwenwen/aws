@@ -4,7 +4,7 @@ This project this target to automate the AWS provisioning process for ec2 and ro
 
 ### Prerequisites
 
-This code is tested with python 2.7, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
+This code is tested with python 2.7, addtional modules (IPy, prettytable, boto3, paramiko) are required which will be installed automaticlly.
 
 Need to configure following at home directory.
 
