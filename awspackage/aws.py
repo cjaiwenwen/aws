@@ -15,11 +15,11 @@ from awspackage import provisioner
 class AWS(network.Network, provisioner.Provisioner):
 
 
-    def __init__(self, DOMAIN, PEM_LOCATION, Module_Path):
+    def __init__(self, DOMAIN, PEM_LOCATION, Module_Path, USERNAME):
         self.__initialized = True
         self.__domain = DOMAIN
         self.__pem_location = PEM_LOCATION
-        provisioner.Provisioner.__init__(self, Module_Path, PEM_LOCATION)
+        provisioner.Provisioner.__init__(self, Module_Path, PEM_LOCATION, USERNAME)
         network.Network.__init__(self, PEM_LOCATION)
 
 

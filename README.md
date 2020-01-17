@@ -41,19 +41,23 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYTESTKEY
 
 * I have tested working on Mac and Linux
 
-* sudo pip install aws_toolkit==1.0.1
+* sudo pip install aws_toolkit==1.0.2
 
 ## How to use it
 
 ```
 from awspackage import aws
 
-myaws = aws.AWS("ROUTE53_Domain",
-        	"VM Access KEY full path")
+myaws = aws.AWS(DOMAIN="abc.com #Hosted at Route53",
+        	PEM_LOCATION="/path/to/pem",
+                Module_Path="/path/to/ansible/playbook",
+                USERNAME="EC2_Username")
 
 myaws.main()
-
 ```
+
+## Noted that the playbook host list is under [servers]
+
 
 * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
 * VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
@@ -71,7 +75,7 @@ myaws.main()
 * Assign CNAME for the provisioned VM
 * Continue ping the provisioned host
 * SSH to the host to confirm accessible (need to add ssh incoming rule)
-
+* Deploy
 
 ## Authors
 
