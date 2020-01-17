@@ -56,11 +56,12 @@ myaws = aws.AWS(DOMAIN="abc.com #Hosted at Route53",
 myaws.main()
 ```
 
-## Noted that the playbook host list is under [servers]
+## Parameters to take note
 
-
-* ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
-* VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
+* "Domain" refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
+* "PEM_LOCATION" refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
+* "Module_Path" is exact location where the ansible yaml file is located, and the server is under [servers]
+* "USERNAME" is the username to access the remote server 
 
 ## What can the library could achieve
 
