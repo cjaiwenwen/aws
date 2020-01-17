@@ -2,3 +2,4 @@ IPy
 boto3
 paramiko
 prettytable
+Ansible

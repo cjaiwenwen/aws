@@ -1,19 +1,18 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.1
 Name: aws-toolkit
-Version: 1.0.1
+Version: 1.0.2
 Summary: An AWS Provisioning Tool
 Home-page: https://github.com/cjaiwenwen/aws
 Author: Chen Jun
 Author-email: cjaiwenwen@gmail.com
 License: MIT
-Description-Content-Type: UNKNOWN
 Description: # AWS Provisioning Tool
         
         This project this target to automate the AWS provisioning process for ec2 and route53
         
         ### Prerequisites
         
-        This code is tested with python 2.7, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
+        This code is tested with python 2.7, addtional modules (IPy, prettytable, boto3, paramiko) are required which will be installed automaticlly.
         
         Need to configure following at home directory.
         
@@ -50,27 +49,31 @@ Description: # AWS Provisioning Tool
         
         * I have tested working on Mac and Linux
         
-        * sudo pip install aws_toolkit==1.0.1
+        * sudo pip install aws_toolkit==1.0.2
         
         ## How to use it
         
         ```
         from awspackage import aws
         
-        myaws = aws.AWS("ROUTE53_Domain",
-                	"VM Access KEY full path")
+        myaws = aws.AWS(DOMAIN="abc.com #Hosted at Route53",
+                	PEM_LOCATION="/path/to/pem",
+                        Module_Path="/path/to/ansible/playbook",
+                        USERNAME="EC2_Username")
         
         myaws.main()
-        
         ```
-        * Could select the account to provision based on the section
-        * AWS_ID refer to the AWS console ID
-        * AWS_KEY refer to the aws console secrect key
-        * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
-        * VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
+        
+        ## Parameters to take note
+        
+        * "Domain" refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
+        * "PEM_LOCATION" refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
+        * "Module_Path" is exact location where the ansible yaml file is located, and the server is under [servers]
+        * "USERNAME" is the username to access the remote server 
         
         ## What can the library could achieve
         
+        * Could select the account to provision based on the section by select the account1 and account2
         * Create instance on any region if the VPC has been already created
         * Control the number of the VMs could provisioned
         * Choose the AMI image
@@ -81,7 +84,7 @@ Description: # AWS Provisioning Tool
         * Assign CNAME for the provisioned VM
         * Continue ping the provisioned host
         * SSH to the host to confirm accessible (need to add ssh incoming rule)
-        
+        * Deploy
         
         ## Authors
         
@@ -102,3 +105,4 @@ Description: # AWS Provisioning Tool
         
         
 Platform: UNKNOWN
+Description-Content-Type: text/markdown
