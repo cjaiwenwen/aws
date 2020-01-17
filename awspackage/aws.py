@@ -6,13 +6,11 @@ import time
 import re
 from prettytable import PrettyTable
 from IPy import IP
-import API_Gateway.awspackage.network as network
+from awspackage import network
 import os
 import socket
 from os.path import expanduser
-import API_Gateway.awspackage.provisioner as provisioner
-
-
+from awspackage import provisioner
 
 class AWS(network.Network, provisioner.Provisioner):
 
