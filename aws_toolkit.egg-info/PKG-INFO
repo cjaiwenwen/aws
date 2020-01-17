@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: aws-toolkit
-Version: 0.1
+Version: 1.0.1
 Summary: An AWS Provisioning Tool
 Home-page: https://github.com/cjaiwenwen/aws
 Author: Chen Jun
@@ -13,46 +13,60 @@ Description: # AWS Provisioning Tool
         
         ### Prerequisites
         
-        This code is tested with python2.7.14, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
+        This code is tested with python 2.7, addtional modules (prettytable, boto3, paramiko) are required which will be installed automaticlly.
         
-        * Need to configure following at home directory
+        Need to configure following at home directory.
         
+        #### For Linux and Mac.
+        ```
         ~/.aws/config
+        ~/.aws/credentials
+        ```
         
+        #### For Windows.
+        ```
+        "%UserProfile%"/.aws/config
+        "%UserProfile%"/.aws/credentials
+        ```
+        
+        #### config file details
         ```
         [default]
         region=ap-southeast-1
         output=json
-        
         ```
+        #### credentials file details
+        ```
+        [account1]
+        aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+        aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
         
+        [account2]
+        aws_access_key_id=AKIAIOSFODNN7TEST
+        aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYTESTKEY
+        ```
         
         ### Installing
         
-        * I have only tested the installation on Mac
+        * I have tested working on Mac and Linux
         
-        * I am still working on Windows, sorry new to packaging :(
-        
-        * sudo pip install git+git://github.com/cjaiwenwen/aws.git#egg=aws-0.1-py2.7.egg
-        
+        * sudo pip install aws_toolkit==1.0.1
         
         ## How to use it
         
         ```
         from awspackage import aws
         
-        myaws = aws.AWS("AWS_ID",
-                	"AWS_KEY",
-                	"ROUTE53_Domain",
+        myaws = aws.AWS("ROUTE53_Domain",
                 	"VM Access KEY full path")
         
         myaws.main()
         
         ```
-        
+        * Could select the account to provision based on the section
         * AWS_ID refer to the AWS console ID
         * AWS_KEY refer to the aws console secrect key
-        * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com
+        * ROUTE53_Domain refer to the domain name that registered to the AWS under the same account, eg. cjaiwenwen.com (Put dummy data if you dont have route53 service)
         * VM ACCESS KEY full path refer to the local pem key path eg, /Users/cjaiwenwen/Desktop/chenjun.pem 
         
         ## What can the library could achieve
@@ -72,6 +86,10 @@ Description: # AWS Provisioning Tool
         ## Authors
         
         * **Chen Jun** - *Initial work* - [CJAIWENWEN](https://github.com/cjaiwenwen)
+        
+        ## Connect with me on Linkedin
+        
+        [Chen Jun](https://www.linkedin.com/in/cjaiwenwen/) 
         
         ## License
         
