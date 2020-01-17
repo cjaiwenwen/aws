@@ -76,7 +76,7 @@ myaws.main()
 * Assign CNAME for the provisioned VM
 * Continue ping the provisioned host
 * SSH to the host to confirm accessible (need to add ssh incoming rule)
-* Deploy
+* Deploy the targeted ansible playbook 
 
 ## Authors
 
