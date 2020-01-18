@@ -1,10 +1,11 @@
 # AWS Provisioning Tool
 
-This project this target to automate the AWS provisioning process for ec2 and route53
+* Automate the AWS provisioning process for ec2 and route53
+* Use Ansible playbook for application deployment
 
 ### Prerequisites
 
-This code is tested with python 2.7, addtional modules (IPy, prettytable, boto3, paramiko) are required which will be installed automaticlly.
+Required Python3.5 and above, addtional modules (Ansible, IPy, prettytable, boto3, paramiko) are required which will be installed automaticlly.
 
 Need to configure following at home directory.
 
